@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  
+ <title>La Fronterísima</title>
+ 
+  <link rel="stylesheet" href="css/outlined.css">
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <meta property="og:site_name" content="www.lafronterisima.online">
+  <meta property="og:image" content="http://www.lafronterisima.online/frontera.png">
+  <link rel="shortcut icon" href="image/frontera.png" type="image/x-icon">
+ 
+  <script src="js/jquery 1.9.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <div class="navbar-fixed">
+    
+  <nav class="teal" role="navigation">
+   
+   <div class="nav-wrappers">
+        
+    <div class="sidenav-trigger" data-target="nav-mobile" class="sidenav-overlay" class="sidenav-trigger"><i class="material-icons-outlined">menu</i>
+      </div>
+      
+      <a class="share_btn">
+      <i class="material-icons-outlined">share</i></a> 
+
+    <div class="modal_wraper" data-action="modal_close"> 
+
+    <div class="modal_container"> 
+
+    <div class="header"><strong>Comparte link app</strong><button class="close" data-action="modal_close">
+    <i class="material-icons-outlined">close</i></button> 
+    </div>
+ 
+   <div class="boxes"> 
+ 
+   <div class="social_media"> 
+   <a href="http://www.facebook.com/sharer.php?u=https://www.amazon.com/dp/B0BD2J85V4/ref=apps_sf_sta%20Descarga%20nuestra%20app:%20La%20Fronterisima" target="_blank" class="shared fb""> 
+    <i class="material-icons-outlined"> facebook</i>
+   </a>
+ 
+   <a href="https://wa.me/?text=https://www.amazon.com/dp/B0BD2J85V4/ref=apps_sf_sta%20Descarga%20nuestra%20app:%20La%20Fronterisima" target="_blank" class="shared wa">
+    <i class="material-icons-outlined"> whatsapp</i>
+   </a> 
+ 
+   <a href="mailto:?Subject=Descarga%20nuestra%20app:%20La%20Fronterisima%20link%20https://www.amazon.com/dp/B0BD2J85V4/ref=apps_sf_sta" target="_blank" class="shared ce"> 
+    <i class="material-icons-outlined"> mail</i>
+   </a>
+   
+    <a href="https://telegram.me/share/url?url=https://www.amazon.com/dp/B0BD2J85V4/ref=apps_sf_sta%20Descarga%20nuestra%20app:%20La%20Fronterisima" target="_blank" class="shared tl"> 
+    <i class="material-icons-outlined"> telegram</i>
+   </a>
+
+   <a href="https://twitter.com/share?url=https://www.amazon.com/dp/B0BD2J85V4/ref=apps_sf_sta%20Descarga%20nuestra%20app:%20La%20Fronterisima" target="_blank" class="shared tt"> 
+     <i class="material-icons-outlined"> spa</i>
+   </a>
+
+   
+ 
+  </div> 
+ 
+  <div class="copy_wraper"> 
+   <strong>Copiar link</strong>
+   <div class="copy_url_wraper">
+  <input type="url" id="shareable_url" value="https://fronterisima.uptodown.com/android"/> 
+ 
+   <button class="copy_url_btn"> Copiar </button> 
+ 
+  </div> 
+  
+  </div> 
+  </div> 
+   
+    <i class="ion-android-share"></i>
+    
+   </div>
+  </div>
+
+  <script>
+ 
+   let share_btns = document.querySelectorAll('.share_btn'),
+   modal_wraper = document.querySelector('.modal_wraper');
+   share_btns.forEach(share_btn => {
+   share_btn.addEventListener('click', ()=>{
+   modal_wraper.classList.add('active');
+   });
+  });
+  
+  addEventListener('click', (e)=>{
+  if(e.target.dataset.action == 'modal_close'){
+  modal_wraper.classList.remove('active');
+  }
+  });
+  let copy_url_btn = document.querySelector('.copy_url_btn');
+  if(copy_url_btn)
+  {
+  copy_url_btn.addEventListener('click', copyURL);
+  }
+  function copyURL(){
+  let copyInput = document.getElementById('shareable_url');
+  copyInput.select();
+  document.execCommand("copy");
+  }
+
+</script>
+        
+   
+
+   <ul class="right hide-on-med-and-down">
+     <li><a href="#INICIO"><span class="material-icons-outlined">radio</span> Radio</a></li>
+     <!-- <li><a href="https://www.facebook.com/Fronterisima-Online-110195480742453" target="_top"><span class="material-icons-outlined">facebook</span> Facebook</a></li>-->
+     <!--<li><a href="https://www.youtube.com/channel/UC3br-XVsFC1-vsGzco5H32w" target="_top"><span class="material-icons-outlined">video_library</span> Youtube</a></li>-->
+     <!-- <li><a href="#WEB" target="_top" onclick="loadWebsite(event, 'https://www.facebook.com/Fronterisima-Online-110195480742453')">
+            <span class="material-icons-outlined"> public </span> Sitio Web
+        </a></li> -->
+     <li><a href="#SOUND"><span class="material-icons-outlined">cloud</span> SoundCloud</a></li>  
+     <li><a href="#NET"><span class="material-icons-outlined"> whatsapp</span> Whatssap</a></li>
+     <!--<li><a href="mailto:fronterisima12@gmail.com"><span class="material-icons-outlined"> email</span> Correo</a></li>-->
+     <li><a href="#MAP"><span class="material-icons-outlined"> map</span> Mapa</a></li>          
+   </ul>
+       
+     </div>
+    </nav>
+   </div>
+	  
+
+    <ul id="nav-mobile" class="sidenav"> 
+	  
+    <div class="sidenav-trigger" data-target="mobile-menu">
+     </div>
+	   
+      <div class="nav_perfil">
+			
+       <div class="nav_logo">
+	    <img src="image/frontera.png">
+      </div>
+                            
+                   
+	 </div>
+                    
+        
+  <ul class="nav_links">
+    <li><a href="#INICIO"><span class="material-icons-outlined">radio</span> Radio</a></li>
+    <li><a href="#SOUND"><span class="material-icons-outlined">cloud</span> SoundCloud</a></li>
+    <li><a href="#NET"><span class="material-icons-outlined">whatsapp</span> Whatsapp</a></li>
+    <li><a href="#MAP"><span class="material-icons-outlined">map</span> Mapa</a></li>
+  
+  
+  
+  
+     <div class="enlaces">
+            <a href="https://www.facebook.com/Fronterisima-Online-110195480742453"><span class="material-icons-outlined">facebook</span> </a>
+			<a href="https://instagram.com/lafronterisimaonlain?igshid=8ya0xso968u"><span class="material-icons-outlined">mail</span> </a>
+			<a href="https://youtube.com/@lafronterisima2435"><span class="material-icons-outlined">inbox</span> </a>
+        </div> 
+  
+  </ul>
+
+   
+
+
+		
+  </ul>
+ 
+   
+
+  <section id="contenido">
+  
+   <article id="INICIO" class="elemento visible">
+  	 
+  <section class="streaming">
+  
+    <div class="contain_radio">
+     
+	    <div class="logo">
+        <img src="image/frontera.png" alt="logo">
+		
+         <span class="radioplayer"
+	     data-src="https://az.azurafree.eu/listen/la_fronterisima/radio.mp3"
+	     data-playbutton="false"
+	     data-volumeslider="false"
+	     data-elapsedtime="false"
+	     data-nowplaying="false"
+	     data-showplayer="false">
+         </span>
+	       
+      </div>
+     
+    
+    <div class="player-container">
+    
+      <div class="live-message">
+        <i class="material-icons-outlined"></i>
+        <label class="live-icon">Live</label>
+      </div>
+      
+       <div class="live-messages">
+        <i class="material-icons-outlined"></i>
+        <label class="live-icon">stream</label>
+      </div>
+      
+      <div class="control-container">
+        
+        <audio id="track">
+          <source src="https://az.azurafree.eu/listen/la_fronterisima/radio.mp3"/>
+        </audio>
+
+         <div id="player-container">
+          <div id="play-pause" class="play"></div>
+         </div>
+    
+      </div>
+   
+    </div>
+    
+    </div>
+   
+	
+  </section>    
+         
+  </article>
+	 
+	 
+	 <!-- <article id="WEB" class="elemento">
+	  
+	    <div id="iframeContainer">
+        <iframe <!--id="iframe" style="display:block;"></iframe>
+    </div>
+
+    <script>
+        // Función para cargar el sitio web en el iframe al hacer clic en el enlace
+        function loadWebsite(event, url) {
+            event.preventDefault(); // Evita que el enlace haga el comportamiento predeterminado (abrir una nueva ventana)
+
+            var iframe = document.getElementById('iframe');
+            iframe.src = url;  // Establece la URL del iframe
+            iframe.style.display = 'block';  // Muestra el iframe
+        }
+    </script>
+		
+      </article> -->
+	  
+	  
+	  <article id="SOUND" class="elemento">
+	  
+		<section class="flexbox-video scrollflow -slide-top">
+	
+		  <div class="postcast">
+
+         <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/users/125486431/favorites" width="100%" height="auto" scrolling="yes" frameborder="no"></iframe>
+
+          <script type="text/javascript">
+            (function(){
+             var widgetIframe = document.getElementById('sc-widget'),
+             widget = SC.Widget(widgetIframe);
+
+             widget.bind(SC.Widget.Events.READY, function() {
+             widget.bind(SC.Widget.Events.PLAY, function() {
+     
+             widget.getCurrentSound(function(currentSound) {
+             console.log('sound ' + currentSound.get('') + 'began to play');
+            });
+          });
+     
+          widget.getVolume(function(volume) {
+          console.log('current volume value is ' + volume);
+          });
+ 
+         widget.setVolume(95);
+     
+        });
+
+      }());
+     </script>
+
+   </div>
+		
+     </section>
+  
+     </article>
+	 
+
+	   
+	   <article id="NET" class="elemento">
+	  
+		   <form id="formulario" class="formulario">
+        <h1>Contacto</h1>
+        <div class="box-input">
+            <input name="nombre" id="nombre" type="text" required>
+            <span data-placeholder="Nombre"></span>
+        </div>
+       
+        <div class="box-input">
+            <input name="email" id="email" type="email" required>
+            <span data-placeholder="Correo electrónico"></span>
+        </div>
+		
+		<div class="box-input">
+            <input name="mensajes" id="mensajes" type="text" required>
+            <span data-placeholder="Ingresa su mensaje"></span>
+        </div>
+		
+        <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i> Enviar </button>
+    
+      
+          <div class="enlace">
+            <h2><span class="material-icons-outlined"> </span><a href="https://mail.google.com"></a></h2>
+                 
+          </div> 
+    
+    </form>
+
+       <script type="text/javascript">
+          $(".box-input input").on("focus", function(){
+            $(this).addClass("focus");
+          });
+          
+          $(".box-input input").html("");
+
+          $(".box-input input").on("blur", function(){
+            if($(this).val() == ""){
+                $(this).removeClass("focus");
+              }
+          });
+
+       </script>
+       
+       
+     <script src="js/envio.js"></script> 
+  
+    </article>
+    
+    
+     <article id="MAP" class="elemento">
+	  
+     <div class="map-responsive">
+  
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+       src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Barrio%20santander%20santander+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+      </iframe>
+  
+   </div>
+  
+  </article>
+	   
+	
+ </section> 
+
+
+    <script type='text/javascript' src="js/repro.js"></script> 
+    <script src="https://public.radio.co/playerapi/jquery.radiocoplayer.min.js"></script>
+    <script src="js/jquery.radiocoplayer.min.js"></script>
+	
+    
+    <script>
+       $('.radioplayer').radiocoPlayer();
+    </script>
+
+
+  <main>
+
+ 
+  <script src="js/shared.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/ajax.js"></script> 
+  <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+  <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
+  <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+  <script src="js/materialize.js"></script>
+
+  <script src="js/init.js"></script>
+
+  </body>
+  
+</html>
